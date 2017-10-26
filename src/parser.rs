@@ -165,6 +165,7 @@ impl Parse for Parser {
         } else if !t.is_implemented() {
             unimplemented!();
         } else {
+            println!("{:?}", t);
             panic!("Invalid esil opcode!");
         };
 
