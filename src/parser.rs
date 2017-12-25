@@ -175,7 +175,7 @@ impl Parse for Parser {
         } else if t.is_arity_zero() {
             (None, None)
         } else if !t.is_implemented() {
-            unimplemented!();
+            panic!("Unimplemented esil opcode: {:?}!", t);
         } else {
             panic!("Invalid esil opcode: {:?}!", t);
         };
