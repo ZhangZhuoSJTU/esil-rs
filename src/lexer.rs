@@ -394,6 +394,7 @@ impl Tokenize for Tokenizer {
                     "STACK" => vec![Token::EDump],
                     "POP" => vec![Token::EPop],
                     "TODO" => vec![Token::ETodo],
+                    "LOOP" => vec![Token::EConstant(0), Token::EGoto],
                     "GOTO" => vec![Token::EGoto],
                     "BREAK" => vec![Token::EBreak],
                     "CLEAR" => vec![Token::EClear],
